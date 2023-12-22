@@ -107,7 +107,7 @@ function getName(data) { // Data is array of strings
 }
 function getGender(data) { // data is either M or F
     if (data === 'M') {
-        return '<i class="fas text-warning fa-mars"></i>';
+        return '<i class="fas text-info fa-mars"></i>';
     } else if (data === 'F') {
         return '<i class="fas text-pink fa-venus"></i>';
     }
