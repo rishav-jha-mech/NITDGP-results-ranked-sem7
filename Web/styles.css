@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --primary-color: #07192F;
-  --secondary-color: aqua;
+  --primary-color: #6e012a;
+  --secondary-color: gold;
 }
 
 html,
@@ -69,7 +69,7 @@ h1 {
   width: 50px;
   z-index: 100;
   animation: angleup 0.5s ease;
-  border: 1px solid var(--bs-info);
+  border: 1px solid var(--secondary-color);
 }
 
 .upBtn:active {
@@ -98,7 +98,7 @@ footer a {
 }
 footer .fab {
   font-size: 1.5rem;
-  color: aqua;
+  color: var(--secondary-color);
   margin-bottom: 1.5rem;
 }
 .fa-angle-left {
@@ -109,7 +109,7 @@ footer .fab {
 
 input {
   background: transparent !important;
-  border-color: var(--bs-info) !important;
+  border-color: var(--secondary-color) !important;
   color: var(--bs-white) !important;
   padding: 0.5rem 0.5rem !important;
 }
@@ -133,13 +133,13 @@ input {
 
 #arena .card {
   font-size: 0.9rem;
-  border-color: var(--bs-info) !important;
+  border-color: var(--secondary-color) !important;
   overflow: hidden;
 }
 
 #arena .card-header {
-  border-color: var(--bs-info);
-  color: var(--bs-info);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
   background: var(--primary-color);
 }
 

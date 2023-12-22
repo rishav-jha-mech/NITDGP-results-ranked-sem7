@@ -1,1 +1,1 @@
-# Results of NIT DGP SEM 6 Sorted and Ranked
+# Results of NIT DGP SEM 7 Sorted and Ranked

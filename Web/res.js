@@ -63,14 +63,14 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 let subject = params?.subject ?? 'ME'; // Royal Mech Rules you Fools !
 let type = params?.type ?? 'CGPA';
 if (type === 'CGPA') {
-    cgpaBtn.className = 'btn btn-info';
+    cgpaBtn.className = 'btn btn-warning';
 } else if (type === 'SGPA') {
-    sgpaBtn.className = 'btn btn-info';
+    sgpaBtn.className = 'btn btn-warning';
 }
 arraySubs.map((item) => {
     if (item.code === subject) {
         heading.innerHTML += item.title;
-        heading.innerHTML += `<h4 class="mt-2 text-info">${type} wise</h4>`
+        heading.innerHTML += `<h4 class="mt-2 text-warning">${type} wise</h4>`
         return;
     }
 });
@@ -107,7 +107,7 @@ function getName(data) { // Data is array of strings
 }
 function getGender(data) { // data is either M or F
     if (data === 'M') {
-        return '<i class="fas text-info fa-mars"></i>';
+        return '<i class="fas text-warning fa-mars"></i>';
     } else if (data === 'F') {
         return '<i class="fas text-pink fa-venus"></i>';
     }
@@ -153,18 +153,18 @@ function setData(data){
                 <div class="card-body">
                     <div class="row text-white mb-2">
                         <div class="col-6 fw-light">
-                            CGPA - <span class="text-info">${item[i - 2]}</span>
+                            CGPA - <span class="text-warning">${item[i - 2]}</span>
                         </div>
                         <div class="col-6 fw-light">
-                            SGPA - <span class="text-info">${item[i - 3]}</span>
+                            SGPA - <span class="text-warning">${item[i - 3]}</span>
                         </div>
                     </div>
                     <div class="row text-white">
                         <div class="col-6 fw-light">
-                            Gender - <span class="text-bold text-info">${getGender(item[i - 4])}</span>
+                            Gender - <span class="text-bold text-warning">${getGender(item[i - 4])}</span>
                         </div>
                         <div class="col-6 fw-light">
-                            Roll no. - <span class="text-bold text-info">${item[2]}</span>
+                            Roll no. - <span class="text-bold text-warning">${item[2]}</span>
                         </div>
                     </div>
                 </div>

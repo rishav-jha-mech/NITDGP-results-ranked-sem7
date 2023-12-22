@@ -2,7 +2,7 @@ const SastaReact = document.getElementById('main')
 downloadPDF = document.createElement('div');
 downloadPDF.setAttribute('class','item');
 downloadPDF.innerHTML = `
-<a href="https://github.com/rishav-jha-mech/NITDGP-results-ranked-sem7/raw/main/UG-SEM7_2023.xlsx" rel="noopener noreferrer"> <i class="fas bg-danger fa-file-pdf text-white fs-2"></i> Download PDF</a>
+<a href="https://github.com/rishav-jha-mech/NITDGP-results-ranked-sem7/raw/main/UG-SEM7_2023-24.pdf" rel="noopener noreferrer"> <i class="fas bg-danger fa-file-pdf text-white fs-2"></i> Download PDF</a>
 `
 SastaReact.appendChild(downloadPDF)
 
@@ -57,5 +57,3 @@ for (const key in LinkList) {
 
 
 thatBody = document.getElementsByTagName('body')[0];
-
-thatBody.appendChild(footer)
